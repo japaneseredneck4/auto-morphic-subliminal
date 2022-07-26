@@ -1,0 +1,11 @@
+prefix=/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=.
+
+Name: Serd
+Version: 0.20.0
+Description: Lightweight RDF syntax library
+Libs: -L${libdir} -lserd-0
+Libs.private: -lm
+Cflags: -I${includedir}/serd-0

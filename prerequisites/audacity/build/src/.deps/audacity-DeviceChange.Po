@@ -1,0 +1,16 @@
+audacity-DeviceChange.o: ../../src/DeviceChange.cpp \
+ /usr/include/stdc-predef.h ../../src/DeviceChange.h ../../src/Audacity.h \
+ configunix.h ../../src/Experimental.h \
+ /usr/local/lib/wx/include/gtk2-unicode-3.1/wx/setup.h
+
+/usr/include/stdc-predef.h:
+
+../../src/DeviceChange.h:
+
+../../src/Audacity.h:
+
+configunix.h:
+
+../../src/Experimental.h:
+
+/usr/local/lib/wx/include/gtk2-unicode-3.1/wx/setup.h:

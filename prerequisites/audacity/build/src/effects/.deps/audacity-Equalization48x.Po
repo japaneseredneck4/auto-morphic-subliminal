@@ -1,0 +1,16 @@
+effects/audacity-Equalization48x.o: ../../src/effects/Equalization48x.cpp \
+ /usr/include/stdc-predef.h ../../src/effects/../Audacity.h configunix.h \
+ ../../src/effects/Equalization48x.h ../../src/effects/../Experimental.h \
+ /usr/local/lib/wx/include/gtk2-unicode-3.1/wx/setup.h
+
+/usr/include/stdc-predef.h:
+
+../../src/effects/../Audacity.h:
+
+configunix.h:
+
+../../src/effects/Equalization48x.h:
+
+../../src/effects/../Experimental.h:
+
+/usr/local/lib/wx/include/gtk2-unicode-3.1/wx/setup.h:

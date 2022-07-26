@@ -1,0 +1,10 @@
+g723_16.lo: ../../../../../lib-src/libsndfile/src/G72x/g723_16.c \
+ /usr/include/stdc-predef.h \
+ ../../../../../lib-src/libsndfile/src/G72x/g72x.h \
+ ../../../../../lib-src/libsndfile/src/G72x/g72x_priv.h
+
+/usr/include/stdc-predef.h:
+
+../../../../../lib-src/libsndfile/src/G72x/g72x.h:
+
+../../../../../lib-src/libsndfile/src/G72x/g72x_priv.h:

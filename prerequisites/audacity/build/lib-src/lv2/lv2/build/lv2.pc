@@ -1,0 +1,7 @@
+prefix=/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2
+includedir=.
+
+Name: LV2
+Version: 1.10.0
+Description: An extensible audio plugin interface.
+Cflags: -I${includedir}

@@ -1,0 +1,16 @@
+# project lv2 (1.10.0) configured on Wed Jul 20 04:37:33 2022 by
+# waf 1.7.16 (abi 98, python 20710f0 on linux2)
+# using waf --prefix=. --include=. --no-plugins configure
+#
+----------------------------------------
+Setting top to
+/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2
+----------------------------------------
+Setting out to
+/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build
+----------------------------------------
+Checking for 'gcc' (c compiler)
+find program=['gcc', 'cc'] paths=['/home/noah/.local/bin', '/usr/local/bin', '/usr/bin', '/bin', '/usr/local/games', '/usr/games', '/sbin', '/usr/sbin'] var='CC' -> '/usr/bin/gcc'
+find program=['ar'] paths=['/home/noah/.local/bin', '/usr/local/bin', '/usr/bin', '/bin', '/usr/local/games', '/usr/games', '/sbin', '/usr/sbin'] var='AR' -> '/usr/bin/ar'
+/usr/bin/gcc
+(tool compiler_c is already loaded, skipping)

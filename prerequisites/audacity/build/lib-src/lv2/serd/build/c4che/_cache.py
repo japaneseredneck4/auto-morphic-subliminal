@@ -1,0 +1,65 @@
+AR = '/usr/bin/ar'
+ARFLAGS = 'rcs'
+BINDIR = '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/bin'
+BUILD_SHARED = False
+BUILD_STATIC = True
+BUILD_TESTS = None
+BUILD_UTILS = False
+CC = ['/usr/bin/gcc']
+CCLNK_SRC_F = []
+CCLNK_TGT_F = ['-o']
+CC_NAME = 'gcc'
+CC_SRC_F = []
+CC_TGT_F = ['-c', '-o']
+CC_VERSION = ('8', '3', '0')
+CFLAGS = ['-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-DNDEBUG', '-fshow-column', '-std=c99']
+CFLAGS_MACBUNDLE = ['-fPIC']
+CFLAGS_cshlib = ['-fPIC']
+COMPILER_CC = 'gcc'
+CPPPATH_ST = '-I%s'
+CXXFLAGS = ['-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd', '-DNDEBUG', '-fshow-column']
+DATADIR = '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/share'
+DEBUG = False
+DEFINES = ['HAVE_FMAX=1', 'HAVE_POSIX_MEMALIGN=1', 'HAVE_POSIX_FADVISE=1', 'HAVE_FILENO=1', 'SERD_VERSION="0.20.0"']
+DEFINES_FILENO = ['_POSIX_C_SOURCE=201112L']
+DEFINES_POSIX_FADVISE = ['_POSIX_C_SOURCE=201112L']
+DEFINES_POSIX_MEMALIGN = ['_POSIX_C_SOURCE=201112L']
+DEFINES_ST = '-D%s'
+DEST_BINFMT = 'elf'
+DEST_CPU = 'x86_64'
+DEST_OS = 'linux'
+DOCDIR = '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/share/doc'
+DOCS = False
+INCLUDEDIR = '.'
+INCLUDES_SERD = ['${INCLUDEDIR}/serd-0']
+LIBDIR = '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/lib'
+LIBPATH_SERD = ['/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/lib']
+LIBPATH_ST = '-L%s'
+LIB_FMAX = ['m']
+LIB_SERD = ['serd-0']
+LIB_ST = '-l%s'
+LINKFLAGS = ['-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build']
+LINKFLAGS_MACBUNDLE = ['-bundle', '-undefined', 'dynamic_lookup']
+LINKFLAGS_cshlib = ['-shared']
+LINKFLAGS_cstlib = ['-Wl,-Bstatic']
+LINK_CC = ['/usr/bin/gcc']
+LV2DIR = '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/lib/lv2'
+MANDIR = '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/share/man'
+PARDEBUG = False
+PKG_serd_0 = 'serd-0'
+PREFIX = '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd'
+RPATH_ST = '-Wl,-rpath,%s'
+SERD_VERSION = '0.20.0'
+SHLIB_MARKER = '-Wl,-Bdynamic'
+SONAME_ST = '-Wl,-h,%s'
+STATIC_PROGS = None
+STLIBPATH_ST = '-L%s'
+STLIB_MARKER = '-Wl,-Bstatic'
+STLIB_ST = '-l%s'
+SYSCONFDIR = '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/etc'
+cfg_files = ['/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build/serd_config.h']
+cprogram_PATTERN = '%s'
+cshlib_PATTERN = 'lib%s.so'
+cstlib_PATTERN = 'lib%s.a'
+define_key = ['HAVE_FMAX', 'HAVE_POSIX_MEMALIGN', 'HAVE_POSIX_FADVISE', 'HAVE_FILENO', 'SERD_VERSION']
+macbundle_PATTERN = '%s.bundle'

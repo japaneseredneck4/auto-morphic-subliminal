@@ -1,0 +1,10 @@
+prefix=/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=.
+
+Name: lv2core
+Version: 12.0
+Description: An audio plugin interface specification.
+Libs:
+Cflags: -I${includedir}

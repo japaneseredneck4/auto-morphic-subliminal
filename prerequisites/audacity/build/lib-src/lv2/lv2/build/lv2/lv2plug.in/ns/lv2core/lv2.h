@@ -1,0 +1,1 @@
+/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/lv2/lv2plug.in/ns/lv2core/lv2.h

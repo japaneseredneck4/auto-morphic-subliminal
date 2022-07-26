@@ -1,0 +1,11 @@
+prefix=/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=.
+
+Name: Sord
+Version: 0.12.2
+Description: A lightweight C library for storing RDF statements in memory.
+Requires: serd-0
+Libs: -L${libdir} -lsord-0
+Cflags: -I${includedir}/sord-0

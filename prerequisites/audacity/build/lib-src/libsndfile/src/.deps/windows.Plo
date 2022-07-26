@@ -1,0 +1,9 @@
+windows.lo: ../../../../lib-src/libsndfile/src/windows.c \
+ /usr/include/stdc-predef.h ../../../../lib-src/libsndfile/src/sfconfig.h \
+ config.h
+
+/usr/include/stdc-predef.h:
+
+../../../../lib-src/libsndfile/src/sfconfig.h:
+
+config.h:

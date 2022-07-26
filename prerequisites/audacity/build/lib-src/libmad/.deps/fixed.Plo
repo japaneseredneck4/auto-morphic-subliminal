@@ -1,0 +1,11 @@
+fixed.lo: ../../../lib-src/libmad/fixed.c /usr/include/stdc-predef.h \
+ config.h ../../../lib-src/libmad/global.h \
+ ../../../lib-src/libmad/fixed.h
+
+/usr/include/stdc-predef.h:
+
+config.h:
+
+../../../lib-src/libmad/global.h:
+
+../../../lib-src/libmad/fixed.h:

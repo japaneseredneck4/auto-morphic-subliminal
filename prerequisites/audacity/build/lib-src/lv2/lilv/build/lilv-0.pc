@@ -1,0 +1,11 @@
+prefix=/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=.
+
+Name: Lilv
+Version: 0.20.0
+Description: Simple C library for hosting LV2 plugins
+Requires: lv2 serd-0 sord-0 sratom-0
+Libs: -L${libdir} -llilv-0 -ldl
+Cflags: -I${includedir}/lilv-0

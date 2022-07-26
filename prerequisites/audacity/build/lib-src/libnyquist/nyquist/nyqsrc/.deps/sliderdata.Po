@@ -1,0 +1,8 @@
+nyquist/nyqsrc/sliderdata.o: \
+ ../../../lib-src/libnyquist/nyquist/nyqsrc/sliderdata.c \
+ /usr/include/stdc-predef.h \
+ ../../../lib-src/libnyquist/nyquist/nyqsrc/sliderdata.h
+
+/usr/include/stdc-predef.h:
+
+../../../lib-src/libnyquist/nyquist/nyqsrc/sliderdata.h:

@@ -1,0 +1,16 @@
+genre.lo: ../../../lib-src/libid3tag/genre.c /usr/include/stdc-predef.h \
+ config.h ../../../lib-src/libid3tag/global.h \
+ ../../../lib-src/libid3tag/id3tag.h ../../../lib-src/libid3tag/ucs4.h \
+ ../../../lib-src/libid3tag/genre.dat
+
+/usr/include/stdc-predef.h:
+
+config.h:
+
+../../../lib-src/libid3tag/global.h:
+
+../../../lib-src/libid3tag/id3tag.h:
+
+../../../lib-src/libid3tag/ucs4.h:
+
+../../../lib-src/libid3tag/genre.dat:

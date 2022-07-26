@@ -1,0 +1,11 @@
+version.lo: ../../../lib-src/libmad/version.c /usr/include/stdc-predef.h \
+ config.h ../../../lib-src/libmad/global.h \
+ ../../../lib-src/libmad/version.h
+
+/usr/include/stdc-predef.h:
+
+config.h:
+
+../../../lib-src/libmad/global.h:
+
+../../../lib-src/libmad/version.h:

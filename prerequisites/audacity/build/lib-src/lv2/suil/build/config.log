@@ -1,0 +1,128 @@
+# project suil (0.8.2) configured on Wed Jul 20 04:37:35 2022 by
+# waf 1.7.16 (abi 98, python 20710f0 on linux2)
+# using waf --prefix=. --include=. --static --no-shared --no-qt configure
+#
+----------------------------------------
+Setting top to
+/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil
+----------------------------------------
+Setting out to
+/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/build
+----------------------------------------
+Checking for 'gcc' (c compiler)
+find program=['gcc', 'cc'] paths=['/home/noah/.local/bin', '/usr/local/bin', '/usr/bin', '/bin', '/usr/local/games', '/usr/games', '/sbin', '/usr/sbin'] var='CC' -> '/usr/bin/gcc'
+find program=['ar'] paths=['/home/noah/.local/bin', '/usr/local/bin', '/usr/bin', '/bin', '/usr/local/games', '/usr/games', '/sbin', '/usr/sbin'] var='AR' -> '/usr/bin/ar'
+/usr/bin/gcc
+----------------------------------------
+Checking for 'g++' (c++ compiler)
+find program=['g++', 'c++'] paths=['/home/noah/.local/bin', '/usr/local/bin', '/usr/bin', '/bin', '/usr/local/games', '/usr/games', '/sbin', '/usr/sbin'] var='CXX' -> '/usr/bin/g++'
+(tool ar is already loaded, skipping)
+/usr/bin/g++
+----------------------------------------
+Checking for link flags -Wl,-z,-nodelete
+==>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] [32mcxx: build/.conf_check_e61af09a698b7557c20c60573dcfe510/test.cpp -> build/.conf_check_e61af09a698b7557c20c60573dcfe510/testbuild/test.cpp.1.o
+[0m
+['/usr/bin/g++', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil', '-DNDEBUG', '-fshow-column', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/build/.conf_check_e61af09a698b7557c20c60573dcfe510/testbuild', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+[2/2] [33mcxxprogram: build/.conf_check_e61af09a698b7557c20c60573dcfe510/testbuild/test.cpp.1.o -> build/.conf_check_e61af09a698b7557c20c60573dcfe510/testbuild/testprog
+[0m
+['/usr/bin/g++', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv/build', '-llilv-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sratom/build', '-lsratom-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord/build', '-lsord-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build', '-lserd-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv/build', '-llilv-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sratom/build', '-lsratom-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord/build', '-lsord-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build', '-lserd-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-Wl,-z,nodelete', 'test.cpp.1.o', '-o', '/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/build/.conf_check_e61af09a698b7557c20c60573dcfe510/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+err: /usr/bin/ld: cannot find -llilv-0
+/usr/bin/ld: cannot find -lsratom-0
+/usr/bin/ld: cannot find -lsord-0
+/usr/bin/ld: cannot find -lserd-0
+/usr/bin/ld: cannot find -llilv-0
+/usr/bin/ld: cannot find -lsratom-0
+/usr/bin/ld: cannot find -lsord-0
+/usr/bin/ld: cannot find -lserd-0
+collect2: error: ld returned 1 exit status
+
+from /home/noah/Documents/auda/audacity/build/lib-src/lv2/suil: Test does not build: Traceback (most recent call last):
+  File "/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/waflib/Tools/c_config.py", line 460, in run_c_code
+    bld.compile()
+  File "/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/waflib/Build.py", line 188, in compile
+    raise Errors.BuildError(self.producer.error)
+BuildError: Build failed
+ -> task in 'testprog' failed (exit status 1): 
+	{task 139758904253712: cxxprogram test.cpp.1.o -> testprog}
+['/usr/bin/g++', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv/build', '-llilv-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sratom/build', '-lsratom-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord/build', '-lsord-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build', '-lserd-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv/build', '-llilv-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sratom/build', '-lsratom-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord/build', '-lsord-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build', '-lserd-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-Wl,-z,nodelete', 'test.cpp.1.o', '-o', '/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/build/.conf_check_e61af09a698b7557c20c60573dcfe510/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+
+no
+from /home/noah/Documents/auda/audacity/build/lib-src/lv2/suil: The configuration failed
+----------------------------------------
+Checking for program pkg-config
+/usr/bin/pkg-config
+find program=['pkg-config'] paths=['/home/noah/.local/bin', '/usr/local/bin', '/usr/bin', '/bin', '/usr/local/games', '/usr/games', '/sbin', '/usr/sbin'] var='PKGCONFIG' -> '/usr/bin/pkg-config'
+----------------------------------------
+Checking for 'lv2' >= 1.0.0
+['/usr/bin/pkg-config', '--atleast-version=1.0.0', 'lv2']
+['/usr/bin/pkg-config', '--cflags', '--libs', 'lv2']
+out: -I./lv2 -L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/lib -ldl -lm
+
+yes
+----------------------------------------
+Checking for 'lv2' >= 1.6.0
+['/usr/bin/pkg-config', '--atleast-version=1.6.0', 'lv2']
+['/usr/bin/pkg-config', '--cflags', '--libs', 'lv2']
+out: -I./lv2 -L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/lib -ldl -lm
+
+yes
+----------------------------------------
+Checking for 'gtk+-2.0' >= 2.18.0
+['/usr/bin/pkg-config', '--atleast-version=2.18.0', 'gtk+-2.0']
+['/usr/bin/pkg-config', '--cflags', '--libs', 'gtk+-2.0']
+out: -pthread -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype
+
+yes
+----------------------------------------
+Checking for 'gtk+-x11-2.0' >= 2.0.0
+['/usr/bin/pkg-config', '--atleast-version=2.0.0', 'gtk+-x11-2.0']
+['/usr/bin/pkg-config', '--cflags', '--libs', 'gtk+-x11-2.0']
+out: -pthread -I/usr/include/gtk-2.0 -I/usr/lib/x86_64-linux-gnu/gtk-2.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pixman-1 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype
+
+yes
+----------------------------------------
+Checking for library dl
+==>
+
+int main(int argc, char **argv) {
+	(void)argc; (void)argv;
+	return 0;
+}
+
+<==
+[1/2] [32mc: build/.conf_check_89152dcf6ed788934661379655d681d9/test.c -> build/.conf_check_89152dcf6ed788934661379655d681d9/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv/build', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/sratom', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/sratom/build', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord/build', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-DNDEBUG', '-fshow-column', '-std=c99', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/build/.conf_check_89152dcf6ed788934661379655d681d9/testbuild', '-DHAVE_LV2=1', '-DHAVE_LV2_1_6_0=1', '-DHAVE_GTK2=1', '-DHAVE_GTK2_X11=1', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: build/.conf_check_89152dcf6ed788934661379655d681d9/testbuild/test.c.1.o -> build/.conf_check_89152dcf6ed788934661379655d681d9/testbuild/testprog
+[0m
+['/usr/bin/gcc', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv/build', '-llilv-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sratom/build', '-lsratom-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord/build', '-lsord-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build', '-lserd-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv/build', '-llilv-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sratom/build', '-lsratom-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord/build', '-lsord-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build', '-lserd-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', 'test.c.1.o', '-o', '/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/build/.conf_check_89152dcf6ed788934661379655d681d9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ldl']
+err: /usr/bin/ld: cannot find -llilv-0
+/usr/bin/ld: cannot find -lsratom-0
+/usr/bin/ld: cannot find -lsord-0
+/usr/bin/ld: cannot find -lserd-0
+/usr/bin/ld: cannot find -llilv-0
+/usr/bin/ld: cannot find -lsratom-0
+/usr/bin/ld: cannot find -lsord-0
+/usr/bin/ld: cannot find -lserd-0
+collect2: error: ld returned 1 exit status
+
+from /home/noah/Documents/auda/audacity/build/lib-src/lv2/suil: Test does not build: Traceback (most recent call last):
+  File "/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/waflib/Tools/c_config.py", line 460, in run_c_code
+    bld.compile()
+  File "/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/waflib/Build.py", line 188, in compile
+    raise Errors.BuildError(self.producer.error)
+BuildError: Build failed
+ -> task in 'testprog' failed (exit status 1): 
+	{task 139758905398416: cprogram test.c.1.o -> testprog}
+['/usr/bin/gcc', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv/build', '-llilv-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sratom/build', '-lsratom-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord/build', '-lsord-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build', '-lserd-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lilv/build', '-llilv-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sratom/build', '-lsratom-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/sord/build', '-lsord-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build', '-lserd-0', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', 'test.c.1.o', '-o', '/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil/build/.conf_check_89152dcf6ed788934661379655d681d9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ldl']
+
+not found
+from /home/noah/Documents/auda/audacity/build/lib-src/lv2/suil: The configuration failed

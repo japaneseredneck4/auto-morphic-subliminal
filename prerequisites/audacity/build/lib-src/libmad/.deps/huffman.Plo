@@ -1,0 +1,11 @@
+huffman.lo: ../../../lib-src/libmad/huffman.c /usr/include/stdc-predef.h \
+ config.h ../../../lib-src/libmad/global.h \
+ ../../../lib-src/libmad/huffman.h
+
+/usr/include/stdc-predef.h:
+
+config.h:
+
+../../../lib-src/libmad/global.h:
+
+../../../lib-src/libmad/huffman.h:

@@ -1,0 +1,6 @@
+utf8/charset.lo: ../../../../../lib-src/libflac/src/share/utf8/charset.c \
+ /usr/include/stdc-predef.h ../../config.h
+
+/usr/include/stdc-predef.h:
+
+../../config.h:

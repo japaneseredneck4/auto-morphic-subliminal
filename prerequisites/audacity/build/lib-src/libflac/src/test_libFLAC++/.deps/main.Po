@@ -1,0 +1,15 @@
+main.o: ../../../../../lib-src/libflac/src/test_libFLAC++/main.cpp \
+ /usr/include/stdc-predef.h ../../config.h \
+ ../../../../../lib-src/libflac/src/test_libFLAC++/decoders.h \
+ ../../../../../lib-src/libflac/src/test_libFLAC++/encoders.h \
+ ../../../../../lib-src/libflac/src/test_libFLAC++/metadata.h
+
+/usr/include/stdc-predef.h:
+
+../../config.h:
+
+../../../../../lib-src/libflac/src/test_libFLAC++/decoders.h:
+
+../../../../../lib-src/libflac/src/test_libFLAC++/encoders.h:
+
+../../../../../lib-src/libflac/src/test_libFLAC++/metadata.h:

@@ -1,0 +1,8 @@
+nyquist/ffts/src/matlib.o: \
+ ../../../lib-src/libnyquist/nyquist/ffts/src/matlib.c \
+ /usr/include/stdc-predef.h \
+ ../../../lib-src/libnyquist/nyquist/ffts/src/matlib.h
+
+/usr/include/stdc-predef.h:
+
+../../../lib-src/libnyquist/nyquist/ffts/src/matlib.h:

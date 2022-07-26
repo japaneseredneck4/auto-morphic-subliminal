@@ -1,0 +1,50 @@
+/**********************************************************************
+
+  Audacity: A Digital Audio Editor
+
+  DirectoriesPrefs.h
+
+  Joshua Haberman
+
+**********************************************************************/
+
+#ifndef __AUDACITY_DIRECTORIES_PREFS__
+#define __AUDACITY_DIRECTORIES_PREFS__
+
+#include "PrefsPanel.h"
+
+class ShuttleGui;
+
+class wxStaticText;
+class wxTextCtrl;
+
+#define DIRECTORIES_PREFS_PLUGIN_SYMBOL ComponentInterfaceSymbol{ XO("Directories") }
+
+class DirectoriesPrefs final : public PrefsPanel
+{
+ public:
+   DirectoriesPrefs(wxWindow * parent, wxWindowID winid);
+   ~DirectoriesPrefs();
+   ComponentInterfaceSymbol GetSymbol() override;
+   wxString GetDescription() override;
+
+   bool Commit() override;
+   bool Validate() override;
+   wxString HelpPageName() override;
+   void PopulateOrExchange(ShuttleGui & S) override;
+
+ private:
+   void Populate();
+   void UpdateFreeSpace(wxCommandEvent & e);
+   void OnChooseTempDir(wxCommandEvent & e);
+
+   wxStaticText *mFreeSpace;
+   wxTextCtrl *mTempDir;
+
+   DECLARE_EVENT_TABLE()
+};
+
+/// A PrefsPanel::Factory that creates one DirectoriesPrefs panel.
+/// This one is used not only in the Preferences command.
+extern PrefsPanel::Factory DirectoriesPrefsFactory();
+#endif

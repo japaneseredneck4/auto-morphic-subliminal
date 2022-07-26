@@ -1,0 +1,10 @@
+prefix=/home/noah/Documents/auda/audacity/build/lib-src/lv2/suil
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=.
+
+Name: Suil
+Version: 0.8.2
+Description: LV2 plugin UI hosting library
+Libs: -L${libdir} -lsuil-0
+Cflags: -I${includedir}/suil-0

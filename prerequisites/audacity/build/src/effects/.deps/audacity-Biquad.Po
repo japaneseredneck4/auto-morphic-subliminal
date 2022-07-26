@@ -1,0 +1,6 @@
+effects/audacity-Biquad.o: ../../src/effects/Biquad.cpp \
+ /usr/include/stdc-predef.h ../../src/effects/Biquad.h
+
+/usr/include/stdc-predef.h:
+
+../../src/effects/Biquad.h:

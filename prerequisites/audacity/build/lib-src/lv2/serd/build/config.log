@@ -1,0 +1,95 @@
+# project serd (0.20.0) configured on Wed Jul 20 04:37:33 2022 by
+# waf 1.7.16 (abi 98, python 20710f0 on linux2)
+# using waf --prefix=. --include=. --static --no-shared --no-utils configure
+#
+----------------------------------------
+Setting top to
+/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd
+----------------------------------------
+Setting out to
+/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build
+----------------------------------------
+Checking for 'gcc' (c compiler)
+find program=['gcc', 'cc'] paths=['/home/noah/.local/bin', '/usr/local/bin', '/usr/bin', '/bin', '/usr/local/games', '/usr/games', '/sbin', '/usr/sbin'] var='CC' -> '/usr/bin/gcc'
+find program=['ar'] paths=['/home/noah/.local/bin', '/usr/local/bin', '/usr/bin', '/bin', '/usr/local/games', '/usr/games', '/sbin', '/usr/sbin'] var='AR' -> '/usr/bin/ar'
+/usr/bin/gcc
+----------------------------------------
+Checking for function fmax
+==>
+#include <math.h>
+
+int main(int argc, char **argv) {
+	void *p;
+	(void)argc; (void)argv;
+	p=(void*)(fmax);
+	return 0;
+}
+
+<==
+[1/2] [32mc: build/.conf_check_1b4dd6e2a8e85085f06c9f0072653967/test.c -> build/.conf_check_1b4dd6e2a8e85085f06c9f0072653967/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-DNDEBUG', '-fshow-column', '-std=c99', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build/.conf_check_1b4dd6e2a8e85085f06c9f0072653967/testbuild', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: build/.conf_check_1b4dd6e2a8e85085f06c9f0072653967/testbuild/test.c.1.o -> build/.conf_check_1b4dd6e2a8e85085f06c9f0072653967/testbuild/testprog
+[0m
+['/usr/bin/gcc', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', 'test.c.1.o', '-o', '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build/.conf_check_1b4dd6e2a8e85085f06c9f0072653967/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lm']
+yes
+----------------------------------------
+Checking for function posix_memalign
+==>
+#include <stdlib.h>
+
+int main(int argc, char **argv) {
+	void *p;
+	(void)argc; (void)argv;
+	p=(void*)(posix_memalign);
+	return 0;
+}
+
+<==
+[1/2] [32mc: build/.conf_check_2ea5194723c5954b674a495a108c60eb/test.c -> build/.conf_check_2ea5194723c5954b674a495a108c60eb/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-DNDEBUG', '-fshow-column', '-std=c99', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build/.conf_check_2ea5194723c5954b674a495a108c60eb/testbuild', '-DHAVE_FMAX=1', '-D_POSIX_C_SOURCE=201112L', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: build/.conf_check_2ea5194723c5954b674a495a108c60eb/testbuild/test.c.1.o -> build/.conf_check_2ea5194723c5954b674a495a108c60eb/testbuild/testprog
+[0m
+['/usr/bin/gcc', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', 'test.c.1.o', '-o', '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build/.conf_check_2ea5194723c5954b674a495a108c60eb/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for function posix_fadvise
+==>
+#include <fcntl.h>
+
+int main(int argc, char **argv) {
+	void *p;
+	(void)argc; (void)argv;
+	p=(void*)(posix_fadvise);
+	return 0;
+}
+
+<==
+[1/2] [32mc: build/.conf_check_5c8e2d113ba3a2849a1f88f23768beda/test.c -> build/.conf_check_5c8e2d113ba3a2849a1f88f23768beda/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-DNDEBUG', '-fshow-column', '-std=c99', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build/.conf_check_5c8e2d113ba3a2849a1f88f23768beda/testbuild', '-DHAVE_FMAX=1', '-DHAVE_POSIX_MEMALIGN=1', '-D_POSIX_C_SOURCE=201112L', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: build/.conf_check_5c8e2d113ba3a2849a1f88f23768beda/testbuild/test.c.1.o -> build/.conf_check_5c8e2d113ba3a2849a1f88f23768beda/testbuild/testprog
+[0m
+['/usr/bin/gcc', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', 'test.c.1.o', '-o', '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build/.conf_check_5c8e2d113ba3a2849a1f88f23768beda/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes
+----------------------------------------
+Checking for function fileno
+==>
+#include <stdio.h>
+
+int main(int argc, char **argv) {
+	void *p;
+	(void)argc; (void)argv;
+	p=(void*)(fileno);
+	return 0;
+}
+
+<==
+[1/2] [32mc: build/.conf_check_5f8f3f8e645c8ffce7bb23f14cb68a53/test.c -> build/.conf_check_5f8f3f8e645c8ffce7bb23f14cb68a53/testbuild/test.c.1.o
+[0m
+['/usr/bin/gcc', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', '-DNDEBUG', '-fshow-column', '-std=c99', '-I/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build/.conf_check_5f8f3f8e645c8ffce7bb23f14cb68a53/testbuild', '-DHAVE_FMAX=1', '-DHAVE_POSIX_MEMALIGN=1', '-DHAVE_POSIX_FADVISE=1', '-D_POSIX_C_SOURCE=201112L', '../test.c', '-c', '-o', 'test.c.1.o']
+[2/2] [33mcprogram: build/.conf_check_5f8f3f8e645c8ffce7bb23f14cb68a53/testbuild/test.c.1.o -> build/.conf_check_5f8f3f8e645c8ffce7bb23f14cb68a53/testbuild/testprog
+[0m
+['/usr/bin/gcc', '-L/home/noah/Documents/auda/audacity/build/lib-src/lv2/lv2/build', 'test.c.1.o', '-o', '/home/noah/Documents/auda/audacity/build/lib-src/lv2/serd/build/.conf_check_5f8f3f8e645c8ffce7bb23f14cb68a53/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+yes

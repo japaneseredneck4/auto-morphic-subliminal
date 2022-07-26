@@ -1,0 +1,8 @@
+tracks/playabletrack/wavetrack/ui/audacity-WaveTrackViewConstants.o: \
+ ../../src/tracks/playabletrack/wavetrack/ui/WaveTrackViewConstants.cpp \
+ /usr/include/stdc-predef.h \
+ ../../src/tracks/playabletrack/wavetrack/ui/WaveTrackViewConstants.h
+
+/usr/include/stdc-predef.h:
+
+../../src/tracks/playabletrack/wavetrack/ui/WaveTrackViewConstants.h:
