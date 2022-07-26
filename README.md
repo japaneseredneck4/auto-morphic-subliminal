@@ -1,7 +1,5 @@
 Automatic dual-layered subliminal (with custom speed) and morphic field creation utility for Debian based systems.
 
-The latest stable build is in the "Releases" sidebar to the right. The latest unreleased version can be obtained by downloading the source code directly from GitHub.
-
 Creates a subliminal with ultrasound and masked component, then charges with morphic field.
 
 Go to the prerequisites/ folder and read the "readme.txt" file before using the utility.
